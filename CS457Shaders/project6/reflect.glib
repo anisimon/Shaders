@@ -1,0 +1,32 @@
+##OpenGL GLIB
+Perspective 70
+Lookat  0 0 3   0 0 0   0 1 0
+
+Vertex   texture.vert
+Fragment texture.frag
+Program  Texture  TexUnit 6
+
+Texture2D  6  right.bmp
+QuadYZ 5. 5. 10 10
+Texture2D  6  left.bmp
+QuadYZ -5. 5. 10 10
+Texture2D  6  top.bmp
+QuadXZ 5. 5. 10 10
+Texture2D  6  bottom.bmp
+QuadXZ -5. 5. 10 10
+Texture2D  6  back.bmp
+QuadXY 5. 5. 10 10
+Texture2D  6  front.bmp
+QuadXY -5. 5. 10 10
+
+
+
+CubeMap 6 right.bmp left.bmp  top.bmp bottom.bmp   back.bmp front.bmp
+
+Vertex   reflect.vert
+Fragment reflect.frag
+Program  Reflect  ReflectUnit 6
+
+#Obj  cow.obj
+Obj salmon_high.obj
+ 

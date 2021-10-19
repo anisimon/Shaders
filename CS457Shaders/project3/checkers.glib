@@ -1,0 +1,20 @@
+##OpenGL GLIB
+Perspective 90
+LookAt 0 0 3  0 0 0  0 1 0
+
+Vertex   checkers.vert
+Fragment checkers.frag
+Program  Checkers  			\
+		uUseST <false>			\
+		uSmooth <false>		\
+		uSquareColor {1. .5 0.} \
+		uAd <.01 .05 .5>  \
+		uBd <.01 .05 .5>  \
+        uTol <0. 0. 1.>		\
+        uNoiseAmp <0. 0. 10.>  \
+		uNoiseFreq <0. 1. 10.>  \
+        uAlpha <0. 1. 1.>               
+
+Color 1  1.  1.
+#Torus  1.  .5  60 60
+Sphere 1. 60 60
